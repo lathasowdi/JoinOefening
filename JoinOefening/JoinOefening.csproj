@@ -55,14 +55,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBadge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBadge.Designer.cs">
+      <DependentUpon>AddBadge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPerson.Designer.cs">
+      <DependentUpon>AddPerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Badge.cs">
       <DependentUpon>JoinOefeningDataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="EditPerson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="EditPerson.Designer.cs">
+      <DependentUpon>EditPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="example.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="example.Designer.cs">
+      <DependentUpon>example.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
     </Compile>
     <Compile Include="JoinOefeningDataModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -87,8 +111,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ViewBadge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBadge.Designer.cs">
+      <DependentUpon>ViewBadge.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBadge.resx">
+      <DependentUpon>AddBadge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPerson.resx">
+      <DependentUpon>AddPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPerson.resx">
+      <DependentUpon>EditPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="example.resx">
+      <DependentUpon>example.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,6 +141,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ViewBadge.resx">
+      <DependentUpon>ViewBadge.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="JoinOefeningDataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>JoinOefeningDataModel.Designer.cs</LastGenOutput>
